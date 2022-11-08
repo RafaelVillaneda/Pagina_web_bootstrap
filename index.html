@@ -15,7 +15,7 @@
 
 <body>
     <!--HEADER-->
-    <nav id="header" class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav id="header" class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">
                 <img src="./assets/logo.png" class="rounded" alt="logo" width="50px" height="50px">
@@ -40,6 +40,8 @@
                             <li><a class="dropdown-item" href="#">Surreal</a></li>
                             <li><a class="dropdown-item" href="#">Survival Horror</a></li>
                             <li><a class="dropdown-item" href="#">Psicológico</a></li>
+                            <li><a class="dropdown-item" href="#">Comedia</a></li>
+                            <li><a class="dropdown-item" href="#">Aventura</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -85,39 +87,152 @@
 
         <!-- JUEGOS -->
         <section id="juegos" class="mt-4 mt-4">
-            <div class="container" id="tarjetas">
-                <div class="col text-center text-uppercase">
-                    <h3>Conoce nuestros ultimos juegos añadidos</h3>
-                    <hr>
-                </div class="row pb-4">
+            <div class="col text-center text-uppercase">
+                <h3>Conoce nuestros ultimos juegos añadidos</h3>
+                <hr>
+            </div>
+            <div class="container">
 
-                <div class="card align-items-center" style="width: 18rem;">
-                    <img src="./assets/ib.png" class="card-img-top" alt="IB">
-                    <div class="card-body">
-                        <h5 class="card-title">Remake IB 2022</h5>
-                        <div class="badges pb-3">
-                            <span class="badge bg-success">Cine</span>
-                            <span class="badge bg-info">Tecnología</span>
+                <div class="row align-items-center" id="tarjetas">
+
+                    <div class="col-6">
+                        <div class="card mb-3 border-danger " style="max-width: 550px; max-height: 700px;">
+                            <img src="./assets/ib.png" class="card-img-top" alt="IB" width ="640" height="360">
+                            <div class="card-body">
+                                <h5 class="card-title">Remake IB 2022</h5>
+                                <div class="badges pb-3">
+                                    <span class="badge bg-success">Horror</span>
+                                    <span class="badge bg-warning">Survival</span>
+                                </div>
+                                <p class="card-text">
+                                    Una niña llamada Ib visita una galería de arte con sus padres.
+                                    Mientras observa las distintas obras de arte, Ib se da cuenta de repente de que está
+                                    sola.
+                                    Mientras busca a alguien, a cualquier persona, el museo empieza a cambiar...
+                                </p>
+                                <a href="#" target="_blank"
+                                    class="btn btn-primary">Ver
+                                    mas</a>
+                            </div>
                         </div>
-                        <p class="card-text">
-                            Una niña llamada Ib visita una galería de arte con sus padres.
-                            Mientras observa las distintas obras de arte, Ib se da cuenta de repente de que está sola.
-                            Mientras busca a alguien, a cualquier persona, el museo empieza a cambiar...
-                        </p>
-                        <a href="https://es.wikipedia.org/wiki/Guillermo_del_Toro" target="_blank"
-                            class="btn btn-primary">Ver
-                            mas</a>
                     </div>
-                </div>
-
+                    <div class="col-6">
+                        <div class="card mb-3 border-danger " style="max-width: 550px; max-height: 700px;">
+                            <img src="./assets/bugeman.png" class="card-img-top" alt="bugeman" width ="640" height="360">
+                            <div class="card-body">
+                                <h5 class="card-title">The Boogie Man</h5>
+                                <div class="badges pb-3">
+                                    <span class="badge bg-success">Horror</span>
+                                    <span class="badge bg-warning">Survival</span>
+                                </div>
+                                <p class="card-text">
+                                    Keith Baring es un detective frío y dedicado a su trabajo, 
+                                    cuyo jefe decide otorgarle algunos días libres. Junto a su esposa Helena, 
+                                    emprenderá un viaje turístico a un antiguo castillo, en donde las maravillas del paisaje y la 
+                                    historia que guardan aquellas paredes conformarán un destino inesperado...
+                                </p>
+                                <a href="#" target="_blank"
+                                    class="btn btn-primary">Ver
+                                    mas</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="card mb-3 border-danger " style="max-width: 550px; max-height: 700px;">
+                            <img src="./assets/mogeko.png" class="card-img-top" alt="bugeman" width ="640" height="360">
+                            <div class="card-body">
+                                <h5 class="card-title">Mogeko Castle</h5>
+                                <div class="badges pb-3">
+                                    <span class="badge bg-success">Horror</span>
+                                    <span class="badge bg-primary">Surreal</span>
+                                </div>
+                                <p class="card-text">
+                                    Yonaka Kurai es una chica normal de preparatoria que siempre 
+                                    toma el tren para regresar a casa. Esta vez estaba regresando 
+                                    temprano a casa por que era el día en que su hermano regresaba. 
+                                </p>
+                                <a href="#" target="_blank"
+                                    class="btn btn-primary">Ver
+                                    mas</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-6">
+                        <div class="card mb-3 border-danger " style="max-width: 550px; max-height: 700px;">
+                            <img src="./assets/The Gray Garden.png" class="card-img-top" alt="The Gray Garden" width ="640" height="360">
+                            <div class="card-body">
+                                <h5 class="card-title">El Jardín Gris/The Gray Garden</h5>
+                                <div class="badges pb-3">
+                                    <span class="badge bg-info">Aventura</span>
+                                    <span class="badge bg-primary">Comedia</span>
+                                </div>
+                                <p class="card-text">
+                                    Tras una terrible guerra entre ángeles y demonios, ambos bandos terminan 
+                                    llegando a un acuerdo para poder co-existir 
+                                    en paz y armonía. Pasa el tiempo y ahora ángeles y demonios conviven juntos. 
+                                </p>
+                                <a href="#" target="_blank"
+                                    class="btn btn-primary">Ver
+                                    mas</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="card mb-3 border-danger " style="max-width: 550px; max-height: 700px;">
+                            <img src="./assets/Witch's Heart.png" class="card-img-top" alt="Witch's Heart" width ="640" height="360">
+                            <div class="card-body">
+                                <h5 class="card-title">Witch's Heart</h5>
+                                <div class="badges pb-3">
+                                    <span class="badge bg-success">Horror</span>
+                                    <span class="badge bg-info">Aventura</span>
+                                </div>
+                                <p class="card-text">
+                                    Mientras jugaba en las montañas, Claire Elford termina 
+                                    refugiándose de la lluvia en una mansión. Pronto, se da cuenta de que 
+                                    hay otras cuatro personas, monstruos extraños - y que no puede salir. En
+                                    compañía de demonios, los cinco deben descubrir cómo escapar… y 
+                                    resolver el misterio del legendario tesoro que cumple deseos, el Corazón
+                                    de Bruja. 
+                                </p>
+                                <a href="#" target="_blank"
+                                    class="btn btn-primary">Ver
+                                    mas</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="card mb-3 border-danger " style="max-width: 550px; max-height: 700px;">
+                            <img src="./assets/Midnight Train.jpeg" class="card-img-top" alt="Midnight Train" width ="640" height="360">
+                            <div class="card-body">
+                                <h5 class="card-title">Midnight Train</h5>
+                                <div class="badges pb-3">
+                                    <span class="badge bg-success">Horror</span>
+                                    <span class="badge bg-info">Aventura</span>
+                                </div>
+                                <p class="card-text">
+                                    Luna es una viajera que está buscando cierto lugar. De repente, mientras viaja en tren, las personas a su alrededor 
+                                    desaparecen y el tren se detiene en un misterioso lugar. Ahí encuentra un reloj de bolsillo junto a unas instrucciones; 
+                                    debe encontrar el siguiente tren antes de que se agote el tiempo o se quedará atrapada para siempre.
+                                </p>
+                                <a href="#" target="_blank"
+                                    class="btn btn-primary">Ver
+                                    mas</a>
+                            </div>
+                        </div>
+                    </div>
                 <div>
-
-                </div>
-
-
-        </section>
-
+    
+            </div>
+        </div>
         <!-- FIN JUEGOS -->
+
+
+    </section>
+
+    <section></section>
+
+        
 
     </main>
 
