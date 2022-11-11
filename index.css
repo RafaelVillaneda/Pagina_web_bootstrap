@@ -30,3 +30,11 @@ body{
 #mas_desc h2{
     color: white;
 }
+#comentarios p{
+    color: aliceblue;
+
+}
+#comentarios h4{
+    color: rgb(255, 240, 250);
+
+}
