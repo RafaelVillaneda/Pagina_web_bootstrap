@@ -38,6 +38,10 @@ body{
     color: rgb(255, 240, 250);
 
 }
+#comentarios h2{
+    color: antiquewhite;
+
+}
 #descargasRTP {
     background-color: #141212;
 }
